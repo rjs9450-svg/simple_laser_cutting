@@ -7,10 +7,40 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/p5@1.11.13/lib/p5.js"></script>
     <script src="https://unpkg.com/p5.js-svg@1.6.0"></script>
+     <script src="variablesAndBehaviors.js"></script>
+    <script src="classes.js"></script>
 </head>
 <body>
     <h1>The Best Software for Laser Cutting</h1>
-    <script src="variablesAndBehaviors.js"></script>
-    <script src="classes.js"></script>
-<script src="sketch.js"></script>
+   <div id="everything">
+    <div id="instructions">
+    <h3>Instructions:</h3>
+   
+    <p>Right Arrow Key +1 width</p>
+    <p>Left Arrow Key -1 width</p>
+    <p>Up Arrow Key +1 height</p>
+    <p>Down Arrow Key -1 height</p> 
+    <p>Q to +1 degree rotation</p>
+    <p>E to -1 degree rotation</p>
+    <p>W to +1 stroke weight</p>
+    <p>S to -1 stroke weight</p>
+    <p>Hold Shift to increase adjustments!</p>
+    <p>C for ellipse</p>
+    <p>R for rectangle</p>
+    <p>L for line</p>
+    <p>F for free draw (hold down the mouse in this mode)</p>
+    <p>T for text</p>
+    <p>G to toggle engraving</p>
+    <p>Z to undo last action (no redo available)</p>
+    <input type="text" id="textInput" placeholder="Enter text here"> <button id="textButton" onclick="textbehavior()">Set Text</button>
+    <br>
+    <br>
+    <button id="exportButton" onclick="exportSVG()">Export SVG</button>
+   </div>
+<div id="canvasContainer">
+    <script src="sketch.js"></script>
+
+    
+</div>
+</div>
 </body>
