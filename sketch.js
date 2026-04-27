@@ -17,7 +17,6 @@ function draw() {
   fill(0);
   textSize(12);
   noStroke();
-  text(shapeHeight, 10, 20);
   displayMouseCoordinates();
   for(let i = 0; i < shapeHolder.length; i++) {
     shapeHolder[i].display();
@@ -39,7 +38,7 @@ function keyPressed() {
 }
 
 function displayMouseCoordinates() {
-    text(floor(mouseX) + ", " + floor(mouseY), 25, 40);
+    text(floor(mouseX) + ", " + floor(mouseY), 40, 20);
 }
 
 

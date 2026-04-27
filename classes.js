@@ -33,16 +33,16 @@ class object {
         translate(this.x, this.y);
         rotate(this.rotation);
         if(this.shape === 'ellipse') {
-            ellipse(0, 0, this.height, this.width);
+            ellipse(0, 0, this.width, this.height);
     }
         if(this.shape === 'rectangle') {
-            rect(0, 0, this.height, this.width);
+            rect(0, 0, this.width, this.height);
     }
         if(this.shape === 'line') {
-            line(0, 0, this.height, this.width);
+            line(0, 0, this.width, this.height);
     }
          if(this.shape === 'freedraw') {
-            ellipse(0, 0, this.height, this.height);
+            ellipse(0, 0, this.width, this.width);
     }
          if(this.shape === 'text') {
             text(this.text, 0, 0);
@@ -60,16 +60,16 @@ class object {
         translate(this.x, this.y);
         rotate(this.rotation);
         if(this.shape === 'ellipse') {
-            ellipse(0, 0, this.height, this.width);
+            ellipse(0, 0, this.width, this.height);
     }
         if(this.shape === 'rectangle') {
-            rect(0, 0, this.height, this.width);
+            rect(0, 0, this.width, this.height);
     }       
         if(this.shape === 'line') {
-            line(0, 0, this.height, this.width);
+            line(0, 0, this.width, this.height);
     }
             if(this.shape === 'freedraw') {
-            ellipse(0, 0, this.height, this.height);
+            ellipse(0, 0, this.width, this.width);
     }
          if(this.shape === 'text') {
             text(this.text, 0, 0);
@@ -87,16 +87,16 @@ function unsavedObjectsDisplay() {if(engraving === true) { fill(0); noStroke(); 
         translate(mouseX, mouseY);
         rotate(rotation);
         if(shapes[shapeSelector] === 'ellipse') {
-            ellipse(0, 0, shapeHeight, shapeWidth);
+            ellipse(0, 0, shapeWidth, shapeHeight);
     }
         if(shapes[shapeSelector] === 'rectangle') {
-            rect(0, 0, shapeHeight, shapeWidth);
+            rect(0, 0, shapeWidth, shapeHeight);
     }       
         if(shapes[shapeSelector] === 'line') {
-            line(0, 0, shapeHeight, shapeWidth);
+            line(0, 0, shapeWidth, shapeHeight);
     }
             if(shapes[shapeSelector] === 'freedraw') {
-            ellipse(0, 0, shapeHeight, shapeWidth);
+            ellipse(0, 0, shapeWidth, shapeWidth);
     }
          if(shapes[shapeSelector] === 'text') {
             text(textval, 0, 0);
