@@ -49,7 +49,7 @@ function exportSVG() {
     for(let i = 0; i < shapeHolder.length; i++) {
     shapeHolder[i].display();
   }
-    save("mySVG.svg");
+    save(document.getElementById("svgInput").value +".svg");
     loop();
 }
 
