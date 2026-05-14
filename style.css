@@ -23,3 +23,28 @@ display: flex;}
   margin-right: 1%;
   
 }
+
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  margin: 0px;
+}
+
+#title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+}
+
+#nav a {
+  color: aqua;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 24px;
+  text-align: right;
+}

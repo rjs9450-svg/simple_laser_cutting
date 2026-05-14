@@ -1,0 +1,16 @@
+#authorInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20px;
+    width: 400px;
+    font-size: 18px;
+}
+
+#buttons {
+    display: flex;
+    width: 400px;
+    justify-content: center;
+    gap: 20px;
+    margin-left: 20px;
+}
